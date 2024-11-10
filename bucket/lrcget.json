@@ -13,6 +13,10 @@
             "LRCGET"
         ]
     ],
+    "post_uninstall":[
+        "Remove-Item -Recurse -Force %LOCALAPPDATA%\\\\net.lrclib.lrclib",
+        "Remove-Item -Recurse -Force %APPDATA%\\\\Roaming\\\\net.lrclib.lrclib"
+    ],
     "checkver": "github",
     "autoupdate": {
         "url": "https://github.com/coreybutler/nvm-windows/releases/download/$version/LRCGET_$version_x64_en-US.msi"
