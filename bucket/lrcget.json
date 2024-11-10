@@ -14,8 +14,8 @@
         ]
     ],
     "post_uninstall":[
-        "Remove-Item -Recurse -Force %LOCALAPPDATA%\\\\net.lrclib.lrclib",
-        "Remove-Item -Recurse -Force %APPDATA%\\\\Roaming\\\\net.lrclib.lrclib"
+        "Remove-Item -Recurse -Force \"$env:LOCALAPPDATA\\net.lrclib.lrclib\"",
+        "Remove-Item -Recurse -Force \"$env:APPDATA\\Roaming\\net.lrclib.lrclib\""
     ],
     "checkver": "github",
     "autoupdate": {
