@@ -27,14 +27,6 @@
             "RealTimeSync"
         ]
     ],
-    "uninstaller": {
-        "file": "Uninstall\\unins000.exe",
-        "args": [
-            "/VERYSILENT",
-            "/CLOSEAPPLICATIONS",
-            "/FORCECLOSEAPPLICATIONS"
-        ]
-    },
     "checkver": {
         "url": "https://freefilesync.org/download.php",
         "regex": "FreeFileSync ([\\d.]+) Windows"
