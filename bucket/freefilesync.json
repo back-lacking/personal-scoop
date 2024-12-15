@@ -6,7 +6,7 @@
         "identifier": "Freeware",
         "url": "https://freefilesync.org/faq.php#commercial-usage"
     },
-    "url": "https://freefilesync.org/download/FreeFileSync_13.9_Windows_Setup.exe",
+    "url": "https://freefilesync.org/download/FreeFileSync_13.9_Windows_Setup.exe#/setup.exe",
     "hash": "6726da563617cf512ef2cd134b85f0d43789c57b9c88cd2a6ce46619a79b7c51",
     "notes": "Need interaction.",
     "installer": {
