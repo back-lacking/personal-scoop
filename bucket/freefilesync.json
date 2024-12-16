@@ -16,7 +16,7 @@
         ]
     },
     "uninstaller": {
-        "script": "Start-Process \"$dir\\Uninstall\\unins000.exe\" -ArgumentList @('/VERYSILENT' , '/CLOSEAPPLICATIONS' , '/FORCECLOSEAPPLICATIONS') -Wait -Verb RunAs | Out-Null"
+        "script": "Start-Process \"$HOME\\scoop\\apps\\freefilesync\\current\\Uninstall\\unins000.exe\" -ArgumentList @('/VERYSILENT' , '/CLOSEAPPLICATIONS' , '/FORCECLOSEAPPLICATIONS') -Wait -Verb RunAs | Out-Null"
     },
     "checkver": {
         "url": "https://freefilesync.org/download.php",
