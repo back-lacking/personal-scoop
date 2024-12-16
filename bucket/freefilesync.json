@@ -8,9 +8,9 @@
     },
     "url": "https://freefilesync.org/download/FreeFileSync_13.9_Windows_Setup.exe#/setup.exe",
     "hash": "6726da563617cf512ef2cd134b85f0d43789c57b9c88cd2a6ce46619a79b7c51",
-    "notes": "Need interaction. Make sure to change the install path to $HOME\\scoop\\apps\\freefilesync",
     "installer": {
         "script": [
+            "echo \"Needs interaction. Make sure to change the install path to '$HOME\\scoop\\apps\\freefilesync'\"",
             "Start-Process \"$dir\\setup.exe\"  -Wait -Verb RunAs | Out-Null",
             "Remove-Item \"$dir\\setup.exe\""
         ]
