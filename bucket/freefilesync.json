@@ -15,9 +15,9 @@
             "Remove-Item \"$dir\\setup.exe\""
         ]
     },
-    "uninstaller": {
-        "script": "Start-Process \"$HOME\\scoop\\apps\\freefilesync\\current\\Uninstall\\unins000.exe\" -ArgumentList @('/VERYSILENT' , '/CLOSEAPPLICATIONS' , '/FORCECLOSEAPPLICATIONS') -Wait -Verb RunAs | Out-Null"
-    },
+    "pre_uninstall": [
+        "Start-Process \"$HOME\\scoop\\apps\\freefilesync\\current\\Uninstall\\unins000.exe\" -ArgumentList @('/VERYSILENT' , '/CLOSEAPPLICATIONS' , '/FORCECLOSEAPPLICATIONS') -Wait -Verb RunAs | Out-Null"
+    ],
     "checkver": {
         "url": "https://freefilesync.org/download.php",
         "regex": "FreeFileSync ([\\d.]+) Windows"
