@@ -3,8 +3,8 @@
     "description": "Utility for mass-downloading LRC synced lyrics for your offline music library. ",
     "homepage": "https://github.com/tranxuanthang/lrcget",
     "license": "MIT",
-    "url": "https://github.com/tranxuanthang/lrcget/releases/download/0.5.0/LRCGET_0.5.0_x64_en-US.msi",
-    "hash": "4CF6D43854AA26C223D146D86AFBB8FBEDB122246352B2734097E1336E5C816D",
+    "url": "https://github.com/tranxuanthang/lrcget/releases/download/0.9.1/LRCGET_0.9.1_x64_en-US.msi",
+    "hash": "72A60B0C8A97FE15FBFBCF57EA65E341C8DCB48B8CD8E412603B3F759150B5CF",
     "extract_dir": "PFiles\\LRCGET",
     "bin": "LRCGET.exe",
     "shortcuts": [
@@ -19,6 +19,6 @@
     ],
     "checkver": "github",
     "autoupdate": {
-        "url": "https://github.com/coreybutler/nvm-windows/releases/download/$version/LRCGET_$version_x64_en-US.msi"
+        "url": "https://github.com/tranxuanthang/lrcget/releases/download/$version/LRCGET_$version_x64_en-US.msi"
     }
 }
