@@ -9,9 +9,9 @@
     "url": "https://freefilesync.org/download/FreeFileSync_14.0_Windows_Setup.exe",
     "hash": "1c5dba00b0f330586c1dfc93eabdd882ea1b3f55a6f846025b9ddb017acb9437",
     "post_install": [
-        "echo \"Needs interaction. Make sure to change the install path to '$HOME\\scoop\\apps\\freefilesync\\current'\"",
-        "Start-Process \"$dir\\setup.exe\"  -Wait -Verb RunAs | Out-Null",
-        "Remove-Item \"$dir\\setup.exe\""
+        "Write-Host \"Needs interaction. Make sure to change the install path to '$HOME\\scoop\\apps\\freefilesync\\current'\"",
+        "Start-Process \"$dir\\FreeFileSync_$version.exe\"  -Wait -Verb RunAs | Out-Null",
+        "Remove-Item \"$dir\\FreeFileSync_$version.exe\""
     ],
     "pre_uninstall": "Start-Process \"$HOME\\scoop\\apps\\freefilesync\\current\\Uninstall\\unins000.exe\" -ArgumentList @('/VERYSILENT' , '/CLOSEAPPLICATIONS' , '/FORCECLOSEAPPLICATIONS') -Wait -Verb RunAs | Out-Null",
     "checkver": {
